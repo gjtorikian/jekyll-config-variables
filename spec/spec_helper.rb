@@ -35,11 +35,15 @@ RSpec.configure do |config|
     @site.process
   end
 
-  config.after(:each) do
-    # @dest.rmtree if @dest.exist?
-  end
+  # config.after(:each) do
+  #   @dest.rmtree if @dest.exist?
+  # end
 
   def setup_doc(doc_filename)
     @site.collections['source'].docs.find { |d| d.relative_path.match(doc_filename) }
+  end
+
+  def destination_file_exists?(file)
+    File.exist?(File.join(@dest.to_s, file))
   end
 end

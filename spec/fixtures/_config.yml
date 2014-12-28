@@ -4,7 +4,7 @@ variables:
 collections:
   source:
     output: true
-    permalink: :path
+    permalink: '/output/%{latest_version}/:dirpath'
 
 defaults:
   -

@@ -27,3 +27,16 @@ defaults:
 ```
 
 This sets a frontmatter of `version` on all the files in the `source` collection. It uses whatever value is defined in `latest_version` to set that up.
+
+## New permalink variable, `:dirpath`
+
+The `:dirpath` variable can be used as a shortcut in your permalinking options:
+
+``` yaml
+collections:
+  source:
+    output: true
+    permalink: '/output/:dirpath'
+```
+
+`:dirpath` is the base path of a file. It differs from `:path` in that it does not manipulate two special paths: `index` and `search`. If you have a file with these basenames, they will be output exactly as-is. Otherwise, when using `:path`, these files are nested within subfolders.
