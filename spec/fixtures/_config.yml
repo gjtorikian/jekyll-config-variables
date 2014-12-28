@@ -1,0 +1,15 @@
+variables:
+  latest_version: "2.0"
+
+collections:
+  source:
+    output: true
+    permalink: :path
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "source"
+    values:
+      version: "%{latest_version}"
