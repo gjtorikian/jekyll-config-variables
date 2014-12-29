@@ -2,13 +2,13 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'jekyll-version-helper'
-  spec.version       = '0.0.1'
+  spec.name          = 'jekyll-config-variables'
+  spec.version       = '0.1.0'
   spec.authors       = ['Garen Torikian']
   spec.email         = ['gjtorikian@gmail.com']
-  spec.summary       = 'A set of monkey-patching plugins to help Jekyll when building versioned sites'
+  spec.summary       = 'A Jekyll monkey-patch to allow you to use variables within your _config.yml file'
   spec.description   = ''
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/gjtorikian/jekyll-config-variables'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)

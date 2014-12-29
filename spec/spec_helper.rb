@@ -1,6 +1,6 @@
 require 'jekyll'
 require 'yaml'
-require File.expand_path('lib/jekyll-version-helper.rb')
+require File.expand_path('lib/jekyll-config-variables.rb')
 
 RSpec.configure do |config|
 
