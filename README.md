@@ -1,11 +1,7 @@
 jekyll-verison-helper
 =======================
 
-This gem incorporates additional features for Jekyll sites.
-
-## Variables within *_config.yml* files
-
-You can define a variable within a *_config.yml* file and refer to it through the same file.
+This gem lets you define variables within a *_config.yml* file and refer to it through the same file.
 
 To do that, first, create a key called `variables`, and populate it with any set of variable names you like:
 
